@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Prefer color scheme</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="css/common.css">
+</head>
+<body>
+
+    <ul id="switcher">
+	  <li id="grayButton"></li>
+	  <li id="whiteButton"></li>
+	  <li id="blueButton"></li>
+	  <li id="yellowButton"></li>
+	</ul>
+
+
+        <script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+        <script type="text/javascript">
+        	$("#grayButton").click(switchgray);
+        	$("#whiteButton").click(switchwhite);
+        	$("#blueButton").click(switchblue);
+        	$("#yellowButton").click(switchyellow);
+
+        	function switchgray(){
+        		$('body').attr('class','gray');
+        	}
+
+        	function switchwhite(){
+        		$('body').attr('class','white');
+        	}
+
+        	function switchblue(){
+        		$('body').attr('class','blue');
+        	}
+
+        	function switchyellow(){
+        		$('body').attr('class','yellow');
+        	}
+        </script>
+</body>
+</html>
